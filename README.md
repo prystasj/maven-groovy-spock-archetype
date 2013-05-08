@@ -3,6 +3,7 @@ maven-groovy-spock-archetype
 
 This is a spin-off fork from prystasj/maven-groovy-spock-archetype, aimed at fixing/upgrading a couple of archetype pom definitions.
 Specifically,
+
 	1. groovy.version property is updated to 1.8.5
 	2. added project.build.sourceEncoding default property as 'utf-8'
 	3. maven-compiler-plugin is upgraded to 3.1
