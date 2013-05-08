@@ -14,12 +14,12 @@
 
     <properties>
         <cglib.version>2.2.2</cglib.version>
-        <groovy.version>2.0.8</groovy.version>
+        <groovy.version>2.1.3</groovy.version>
         <groovy.eclipse.compiler.version>2.7.0-01</groovy.eclipse.compiler.version>
         <java.version>1.6</java.version>
         <objenesis.version>1.2</objenesis.version>
         <spock.version>0.7-groovy-2.0</spock.version>
-        <spring.version>3.1.1.RELEASE</spring.version>
+        <spring.version>3.2.2.RELEASE</spring.version>
 	    <project.build.sourceEncoding>utf-8</project.build.sourceEncoding>
     </properties>
 
