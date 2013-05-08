@@ -4,11 +4,13 @@ maven-groovy-spock-archetype
 This is a spin-off fork from prystasj/maven-groovy-spock-archetype, aimed at fixing/upgrading a couple of archetype pom definitions.
 Specifically,
 
-    1.    groovy.version property is updated to 1.8.5
-    2.    added project.build.sourceEncoding default property as 'utf-8'
-    3.    maven-compiler-plugin is upgraded to 3.1
-    4.    maven-surefire-plugin is upgraded to 2.14.1
-    5.    added includes for **/*Test.groovy and **/*Spec.groovy sources in maven-surefire-plugin configuration
+    1.    groovy.version property is updated to 2.0.8
+    2.    groovy.eclipse.compiler.version to 2.7.0-01
+    3.    spock.version to 2.0.8
+    4.    added project.build.sourceEncoding default property as 'utf-8'
+    5.    maven-compiler-plugin is upgraded to 3.1
+    6.    maven-surefire-plugin is upgraded to 2.14.1
+    7.    added includes for **/*Test.groovy and **/*Spec.groovy sources in maven-surefire-plugin configuration
 
 A Maven archetype for a project that will use Groovy and the Spock testing framework.
 
