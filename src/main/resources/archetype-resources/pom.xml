@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 
     <modelVersion>4.0.0</modelVersion>
 
@@ -11,13 +13,14 @@
     <description>Maven Groovy Spock Archetype</description>
 
     <properties>
-        <cglib.version>2.2</cglib.version>
-        <groovy.version>1.8.4</groovy.version>
-        <groovy.eclipse.compiler.version>2.6.0-01</groovy.eclipse.compiler.version>
+        <cglib.version>2.2.2</cglib.version>
+        <groovy.version>2.1.3</groovy.version>
+        <groovy.eclipse.compiler.version>2.7.0-01</groovy.eclipse.compiler.version>
         <java.version>1.6</java.version>
-        <objenesis.version>1.2</objenesis.version>
-        <spock.version>0.6-groovy-1.8</spock.version>
-        <spring.version>3.1.1.RELEASE</spring.version>
+        <objenesis.version>1.3</objenesis.version>
+        <spock.version>0.7-groovy-2.0</spock.version>
+        <spring.version>3.2.2.RELEASE</spring.version>
+	    <project.build.sourceEncoding>utf-8</project.build.sourceEncoding>
     </properties>
 
     <build>
@@ -25,7 +28,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
-                <version>2.3.2</version>
+                <version>3.1</version>
                 <configuration>
                     <compilerId>groovy-eclipse-compiler</compilerId>
                     <verbose>false</verbose>
@@ -45,11 +48,13 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
-                <version>2.11</version>
+                <version>2.14.1</version>
                 <configuration>
                     <includes>
                         <include>**/*Test.java</include>
                         <include>**/*Spec.java</include>
+	                    <include>**/*Test.groovy</include>
+                        <include>**/*Spec.groovy</include>
                     </includes>
                 </configuration>
             </plugin>
